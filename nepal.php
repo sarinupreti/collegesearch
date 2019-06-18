@@ -91,7 +91,7 @@ else
 <section class="slider">
   <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner">
-      <div class="item active"> <img data-src="images/slider/home1.jpg" alt="First slide" src="images/slider/home1.jpg">
+      <div class="item active"> <img data-src="images/sliders/home1.jpg" alt="First slide" src="images/sliders/home1.jpg">
         <div class="container">
           <div class="carousel-caption">
             <h1>Browse through the Colleges in Nepal for Higher Studies! </h1>
