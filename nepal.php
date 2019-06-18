@@ -2,7 +2,7 @@
 
 <html>
 <head>
-<title>Study Nepal</title>
+<title>browse</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -47,13 +47,13 @@
       <!-- Brand and toggle get grouped for better mobile display --> 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="navbar-header">
-        <h1 class="navbar-brand"><a href="index.html">college<span>Finder</span></a></h1>
+        <h1 class="navbar-brand"><a href="index.html">EDU<span>LOCATE</span></a></h1>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
       </div>
       <div class="navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li><a href="index.php">Home</a></li>
-          <li class="active"><a href="india.php">Study Nepal</a></li>
+          <li class="active"><a href="nepal.php">browse</a></li>
 <?php
 include('page_session.php');
           
@@ -100,7 +100,7 @@ else
           </div>
               <label class="sr-only" for="exampleInputEmail1">Subject:</label>
               <div class="col-md-12" style="position:absolute;top: 370px;width:800px;left:280px;z-index:99999;">
-    <form method="POST" action="india.php">
+    <form method="POST" action="nepal.php">
         
     <input type="search" class="form-control" id="inputName" placeholder="Search By College Name,Location,Majors" style="height: 45px;border: 1px solid #ccc;border-radius: 5px;padding: 1px 12px;font-size: 19px;width:100%;margin-bottom:20px;" name="search_query">
             <p align="center"><input type="submit" class="btn btn-default btn-lg" href="#college-list" role="button" value="Search" name="search_q">
@@ -152,7 +152,7 @@ else
         
             <h3><span>Filters</span></h3>
               <div class="col-md-12" style="background-color: rgba(175, 177, 179, 0.1);box-shadow: rgba(57, 57, 57, 0.16) 2px 0px 20px;border:rgba(0, 0, 0, 0.1) 0.5px solid;">
-                   <form action="india.php" method="post" name="filter_v">
+                   <form action="nepal.php" method="post" name="filter_v">
             <h3 style="font-size: 20px;margin-top:20px;margin-bottom:15px;">Degree</h3>
                             <hr>
                             <span style="font-size: 18px;font-weight: 900;color: rgba(34, 34, 34, 0.68);margin-top: 30px;">BSC.CSIT</span>
@@ -160,6 +160,12 @@ else
                             <br>
                             <span style="font-size: 18px;font-weight: 900;color: rgba(34, 34, 34, 0.68);margin-top: 0px;">BBA</span>
                             <input type="checkbox" value="bba" style="width: 25px;position: absolute;height: 18px;padding-left: 10px;right:110px;" name="degree">
+                            <br> 
+                            <span style="font-size: 18px;font-weight: 900;color: rgba(34, 34, 34, 0.68);margin-top: 0px;">Engineering</span>
+                            <input type="checkbox" value="engineering" style="width: 25px;position: absolute;height: 18px;padding-left: 10px;right:110px;" name="degree">
+                            <br> 
+                            <span style="font-size: 18px;font-weight: 900;color: rgba(34, 34, 34, 0.68);margin-top: 0px;">Nursing</span>
+                            <input type="checkbox" value="nursing" style="width: 25px;position: absolute;height: 18px;padding-left: 10px;right:110px;" name="degree">
                             <br>        
                     <h3 style="font-size: 20px;margin-top:20px;margin-bottom:15px;">Location</h3>
                             <hr>
@@ -167,30 +173,21 @@ else
                             <select style="width: 65%;height: 30px;font-size: 19px;margin-left:12px;border-radius: 3px;" name="city_option">
                               <option value="all">All</option>
                               <option value="kathmandu">Kathmandu</option>
+                              <option value="patan">Patan</option>
                               <option value="bhaktapur">Bhaktapur</option>
                               <option value="lalitpur">Lalitpur</option>
                               <option value="pokhara">Pokhara</option>
                              
                             </select>
                      
-                    <h3 style="font-size: 20px;margin-top:30px;margin-bottom:15px;">Exams Accepted</h3>
+                    <h3 style="font-size: 20px;margin-top:30px;margin-bottom:15px;">Degree Type</h3>
                             <hr>
                             <!-- <p style="font-size: 18px;font-weight: bold;color: rgba(0, 0, 0, 0.88);margin-top: 0px;margin-bottom: 9px;"><u>For MTECH:</u></p> -->
-                            <span style="font-size: 18px;font-weight: 900;color: rgba(34, 34, 34, 0.68);margin-top: 0px;">GATE</span>
-                            <input type="checkbox" value="GATE" style="width: 25px;position: absolute;height: 18px;padding-left: 10px;right:110px;" name="exam"><br>
-                            <span style="font-size: 18px;font-weight: 900;color: rgba(34, 34, 34, 0.68);margin-top: 0px;">PGCET</span>
-                            <input type="checkbox" value="PGCET" style="width: 25px;position: absolute;height: 18px;padding-left: 10px;right:110px;" name="exam"><br> 
-                            <!-- <p style="font-size: 18px;font-weight: bold;color: rgba(0, 0, 0, 0.88);margin-top: 0px;margin-bottom: 9px;"><u>For MBA:</u></p> -->
-                            <span style="font-size: 18px;font-weight: 900;color: rgba(34, 34, 34, 0.68);margin-top: 0px;">XAT</span>
-                            <input type="checkbox" value="XAT" style="width: 25px;position: absolute;height: 18px;padding-left: 10px;right:110px;" name="exam"><br>
-                            <span style="font-size: 18px;font-weight: 900;color: rgba(34, 34, 34, 0.68);margin-top: 0px;">CAT</span>
-                            <input type="checkbox" value="CAT" style="width: 25px;position: absolute;height: 18px;padding-left: 10px;right:110px;" name="exam"><br>
-                            <span style="font-size: 18px;font-weight: 900;color: rgba(34, 34, 34, 0.68);margin-top: 0px;">MAT</span>
-                            <input type="checkbox" value="MAT" style="width: 25px;position: absolute;height: 18px;padding-left: 10px;right:110px;" name="exam"><br>
-                            <span style="font-size: 18px;font-weight: 900;color: rgba(34, 34, 34, 0.68);margin-top: 0px;">CMAT</span>
-                            <input type="checkbox" value="CMAT" style="width: 25px;position: absolute;height: 18px;padding-left: 10px;right:110px;" name="exam"><br>
-                            <!-- <span style="font-size: 18px;font-weight: 900;color: rgba(34, 34, 34, 0.68);margin-top: 0px;">MAH-CET</span> -->
-                            <!-- <input type="checkbox" value="MAH-CET" style="width: 25px;position: absolute;height: 18px;padding-left: 10px;right:110px;" name="exam"><br>    -->
+                            <span style="font-size: 18px;font-weight: 900;color: rgba(34, 34, 34, 0.68);margin-top: 0px;">Bachelors</span>
+                            <input type="checkbox" value="bachelors" style="width: 25px;position: absolute;height: 18px;padding-left: 10px;right:110px;" name="exam"><br>
+                            <span style="font-size: 18px;font-weight: 900;color: rgba(34, 34, 34, 0.68);margin-top: 0px;">Masters</span>
+                            <input type="checkbox" value="masters" style="width: 25px;position: absolute;height: 18px;padding-left: 10px;right:110px;" name="exam"><br> 
+                   
                     <h3 style="font-size: 20px;margin-top:30px;margin-bottom:15px;">Degree Preferance</h3>
                             <hr>
                             <span style="font-size: 18px;font-weight: 900;color: rgba(34, 34, 34, 0.68);margin-top: 0px;">TU Approved</span>
@@ -201,9 +198,9 @@ else
                             <input type="checkbox" value="pu" style="width: 25px;position: absolute;height: 18px;padding-left: 10px;right:110px;" name="recog"><br>
                      <h3 style="font-size: 20px;margin-top:20px;margin-bottom:15px;">Mode</h3>
                             <hr>
-                            <span style="font-size: 18px;font-weight: 900;color: rgba(34, 34, 34, 0.68);margin-top: 0px;">Part Time</span>
+                            <span style="font-size: 18px;font-weight: 900;color: rgba(34, 34, 34, 0.68);margin-top: 0px;">Morning</span>
                             <input type="checkbox" value="mba" style="width: 25px;position: absolute;height: 18px;padding-left: 10px;right:110px;"><br>
-                            <span style="font-size: 18px;font-weight: 900;color: rgba(34, 34, 34, 0.68);margin-top: 0px;">Full Time</span>
+                            <span style="font-size: 18px;font-weight: 900;color: rgba(34, 34, 34, 0.68);margin-top: 0px;">Day</span>
                             <input type="checkbox" value="mba" style="width: 25px;position: absolute;height: 18px;padding-left: 10px;right:110px;"><br>              
                                         
                                               
@@ -214,7 +211,7 @@ else
                      function showall()
                      {
                        $_SESSION["filter-options"]="original";
-                       header("Location: india.php");
+                       header("Location: nepal.php");
                        
                      }
                      if(isset($_SESSION["filter-options"]))
@@ -251,11 +248,11 @@ echo "<div class='col-md-4' style='margin-top: 0px;margin-left: -10;margin-left:
       <p style='margin-top: 5px;'><b style='color:rgb(230, 57, 154);font-size: 18px;'>Exams Required</b> :$exams</p>
       <p style='margin-top: 5px;'><b style='color:rgb(230, 57, 154);font-size: 18px;'>City</b> :$city</p>
       </div>";  
-    echo "<div class='col-md-12'' style='background-color: #222222;height: 56px;margin-top: 0.5px;border-radius: 3px;'>";
+    echo "<div class='col-md-12'' style='background-color: #ffffff;height: 56px;margin-top: 0.5px;border-radius: 3px;'>";
     echo "<p>";
     echo "<form style='margin-top: -19px;'>";
-    echo "<a name='add-wishlist' class='btn btn-default-mba btn-md-mba' style='margin-top: 5px;margin-left: 485px;margin-right: 10px;' id=$id onclick='function2(this.id)'>Add to WishList</a>";  
-    echo "<a class='btn btn-default-mba btn-md-mba' style='margin-top: 5px;margin-left: 5px;margin-right: 10px;' id=$id onclick='function1(this.id)'>View College</a>";  
+    echo "<a name='add-wishlist' class='btn btn-default-mba btn-md-mba' style='margin-top: background-color: #e5e5e5; 5px;margin-left: 485px;margin-right: 10px;' id=$id onclick='function2(this.id)'>Add to WishList</a>";  
+    echo "<a class='btn btn-default-mba btn-md-mba' style='margin-top: 5px;margin-left: 5px; background-color: #e5e5e5; margin-right: 10px;' id=$id onclick='function1(this.id)'>View College</a>";  
     
     }
     else
@@ -264,7 +261,7 @@ echo "<div class='col-md-4' style='margin-top: 0px;margin-left: -10;margin-left:
       <p style='margin-top: 5px;'><b style='color: #397adc;font-size: 18px;'>Exams Required</b> :$exams</p>
       <p style='margin-top: 5px;'><b style='color: #397adc;font-size: 18px;'>City</b> :$city</p>
       </div>";
-    echo "<div class='col-md-12'' style='background-color: #222222;height: 56px;margin-top: 0.5px;border-radius: 3px;'>";
+    echo "<div class='col-md-12'' style='background-color: #ffffff;height: 56px;margin-top: 0.5px;border-radius: 3px;'>";
     echo "<p>";
     echo "<form style='margin-top: -19px;'>";
     echo "<a name='add-wishlist' class='btn btn-default btn-md' style='margin-top: 5px;margin-left: 485px;margin-right: 10px;' id=$id onclick='function2(this.id)'>Add to WishList</a>";  
@@ -410,14 +407,14 @@ if(isset($_SESSION["filter-options"]) && ($_SESSION["filter-options"]=="filter")
           <br />
           If you have any questions about our products or services, please do not hesitate to contact us. We have friendly, knowledgeable representatives available seven days a week to assist you.</p>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-4">
         <h3>Tweets</h3>
         <p><span>Tweet</span> <a href="#">@nishanks</a><br />
           Great Website truly helpful for finding the right career path and college. </p>
         <p><span>Tweet</span> <a href="#">@anonymous</a><br />
           Awesome job!Truly Helpful!</p>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-4">
         <h3>Mailing list</h3>
         <p>Subscribe to our mailing list for offers, news updates and more!</p>
         <br />
@@ -429,7 +426,7 @@ if(isset($_SESSION["filter-options"]) && ($_SESSION["filter-options"]=="filter")
           <button type="submit" class="btn btn-primary">subscribe</button>
         </form>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-4">
         <h3>Social</h3>
         <p><br />
           Baluwatar, Kathmandu<br />
@@ -443,7 +440,7 @@ if(isset($_SESSION["filter-options"]) && ($_SESSION["filter-options"]=="filter")
       </div>
     </div>
     <hr>
-    <p class="text-center">&copy; Copyright collegeFinder.com. All Rights Reserved.</p>
+    <p class="text-center">&copy; Copyright edulocate.com. All Rights Reserved.</p>
   </div>
 </footer>
 

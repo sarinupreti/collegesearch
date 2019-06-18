@@ -30,7 +30,7 @@ include('wish_process.php');
       <!-- Brand and toggle get grouped for better mobile display --> 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="navbar-header">
-        <h1 class="navbar-brand"><a href="index.html">college<span>Finder</span></a></h1>
+        <h1 class="navbar-brand"><a href="index.html">EDU<span>LOCATE</span></a></h1>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
       </div>
       <div class="navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
@@ -45,7 +45,7 @@ include('wish_process.php');
               <li><a href="logout.php">Logout</a></li>
             </ul>
           </li>
-          <li><a href="india.php">study india</a></li>
+          <li><a href="nepal.php">browse</a></li>
 
 
         </ul>
@@ -110,7 +110,7 @@ include('wish_process.php');
           </div>
           <div class="content-box-large box-with-header">
             <p><img src="images/icons/wish.png" class="img-circle" width="80"></p>
-            <p><b>Zac Snider</b></p>
+            <p><b>ITr</b></p>
             <div class="row" style="padding:0px;">
               <div class="col-md-6">
                 <p class="small mt">MEMBER SINCE</p>
@@ -203,20 +203,14 @@ include('wish_process.php');
 <footer>
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-4">
         <h3>About</h3>
         <p>We strive to deliver a level of service that exceeds the expectations of our customers. <br />
           <br />
           If you have any questions about our products or services, please do not hesitate to contact us. We have friendly, knowledgeable representatives available seven days a week to assist you.</p>
       </div>
-      <div class="col-md-3">
-        <h3>Tweets</h3>
-        <p><span>Tweet</span> <a href="#">@nishanks</a><br />
-          Great Website truly helpful for finding the right career path and college. </p>
-        <p><span>Tweet</span> <a href="#">@anonymous</a><br />
-          Awesome job!Truly Helpful!</p>
-      </div>
-      <div class="col-md-3">
+ 
+      <div class="col-md-4">
         <h3>Mailing list</h3>
         <p>Subscribe to our mailing list for offers, news updates and more!</p>
         <br />
@@ -228,7 +222,7 @@ include('wish_process.php');
           <button type="submit" class="btn btn-primary">subscribe</button>
         </form>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-4">
         <h3>Social</h3>
         <p><br />
           Baluwatar, Kathmandu<br />
@@ -242,7 +236,7 @@ include('wish_process.php');
       </div>
     </div>
     <hr>
-    <p class="text-center">&copy; Copyright collegeFinder.com. All Rights Reserved.</p>
+    <p class="text-center">&copy; Copyright edulocate.com. All Rights Reserved.</p>
   </div>
 </footer>
 

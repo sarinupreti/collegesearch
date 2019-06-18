@@ -28,7 +28,7 @@ $fname=$login_session;
      function function1(id) {
       var id = id;
       //document.writeln(id);
-      window.location.href = "http://localhost/College%20Finder/college_view.php?id=" + id;
+      window.location.href = "http://localhost/edulocate/college_view.php?id=1" + id;
     }
   </script>
 </head>
@@ -39,7 +39,7 @@ $fname=$login_session;
       <!-- Brand and toggle get grouped for better mobile display --> 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="navbar-header">
-        <h1 class="navbar-brand"><a href="index.html">college<span>Finder</span></a></h1>
+        <h1 class="navbar-brand"><a href="index.html">EDU<span>LOCATE</span></a></h1>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
       </div>
       <div class="navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
@@ -54,7 +54,7 @@ $fname=$login_session;
               <li><a href="logout.php">Logout</a></li>
             </ul>
           </li>
-          <li><a href="india.php">study india</a></li>
+          <li><a href="nepal.php">browse</a></li>
 
 
         </ul>
@@ -106,11 +106,11 @@ echo "<div class='col-md-4' style='margin-top: 0px;margin-left: -10;margin-left:
       <p style='margin-top: 7px;text-align: -webkit-left;'><b style='color:rgb(230, 57, 154);font-size: 18px;'>Exams Required</b> :$exams</p>
       <p style='margin-top: 7px;text-align: -webkit-left;'><b style='color:rgb(230, 57, 154);font-size: 18px;'>City</b> :$city</p>
       </div>";  
-    echo "<div class='col-md-12'' style='background-color: #222222;height: 56px;width: 946px;margin-top: 0.5px;border-radius: 3px;'>";
+    echo "<div class='col-md-12'' style='background-color: #ffffff;height: 56px;width: 946px;margin-top: 0.5px;border-radius: 3px;'>";
     echo "<p>";
     echo "<form style='margin-top: -19px;'>";
-    echo "<a name='add-wishlist' class='btn btn-default-mba btn-md-mba' style='margin-top: 5px;margin-left: 600px;margin-right: 10px;' id=$id onclick='function2(this.id)'>Add to WishList</a>";  
-    echo "<a class='btn btn-default-mba btn-md-mba' style='margin-top: 5px;margin-left: 5px;margin-right: 10px;' id=$id onclick='function1(this.id)'>View College</a>";  
+    echo "<a name='add-wishlist' class='btn btn-default-mba btn-md-mba' style='margin-top: 5px;margin-left: 600px;margin-right: 10px; background-color: #e5e5e5;' id=$id onclick='function2(this.id)'>Add to WishList</a>";  
+    echo "<a class='btn btn-default-mba btn-md-mba' style='margin-top: 5px;margin-left: 5px;margin-right: 10px; background-color: #e5e5e5;' id=$id onclick='function1(this.id)'>View College</a>";  
     
     }
     else
@@ -119,7 +119,7 @@ echo "<div class='col-md-4' style='margin-top: 0px;margin-left: -10;margin-left:
       <p style='margin-top: 7px;text-align: -webkit-left;'><b style='color: #397adc;font-size: 18px;'>Exams Required</b> :$exams</p>
       <p style='margin-top: 7px;text-align: -webkit-left;'><b style='color: #397adc;font-size: 18px;'>City</b> :$city</p>
       </div>";
-    echo "<div class='col-md-12'' style='background-color: #222222;height: 56px;width: 946px;margin-top: 0.5px;border-radius: 3px;'>";
+    echo "<div class='col-md-12'' style='background-color: #ffffff;height: 56px;width: 946px;margin-top: 0.5px;border-radius: 3px;'>";
     echo "<p>";
     echo "<form style='margin-top: -19px;'>";
     echo "<a name='add-wishlist' class='btn btn-default btn-md' style='margin-top: 5px;margin-left: 600px;margin-right: 10px;' id=$id onclick='function2(this.id)'>Add to WishList</a>";  
@@ -219,20 +219,14 @@ while($row = $result2->fetch_assoc())
 <footer>
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-4">
         <h3>About</h3>
         <p>We strive to deliver a level of service that exceeds the expectations of our customers. <br />
           <br />
           If you have any questions about our products or services, please do not hesitate to contact us. We have friendly, knowledgeable representatives available seven days a week to assist you.</p>
       </div>
-      <div class="col-md-3">
-        <h3>Tweets</h3>
-        <p><span>Tweet</span> <a href="#">@nishanks</a><br />
-          Great Website truly helpful for finding the right career path and college. </p>
-        <p><span>Tweet</span> <a href="#">@anonymous</a><br />
-          Awesome job!Truly Helpful!</p>
-      </div>
-      <div class="col-md-3">
+
+      <div class="col-md-4">
         <h3>Mailing list</h3>
         <p>Subscribe to our mailing list for offers, news updates and more!</p>
         <br />
@@ -244,7 +238,7 @@ while($row = $result2->fetch_assoc())
           <button type="submit" class="btn btn-primary">subscribe</button>
         </form>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-4">
         <h3>Social</h3>
         <p><br />
           Baluwatar, Kathmandu<br />
@@ -258,7 +252,7 @@ while($row = $result2->fetch_assoc())
       </div>
     </div>
     <hr>
-    <p class="text-center">&copy; Copyright collegeFinder.com. All Rights Reserved.</p>
+    <p class="text-center">&copy; Copyright edulocate.com. All Rights Reserved.</p>
   </div>
 </footer>
 

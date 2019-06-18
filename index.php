@@ -3,7 +3,7 @@
 include('page_session.php');
 ?>
 <html><head>
-<title>collegeFinder</title>
+<title>edulocate</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Bootstrap -->
 <link rel="icon" type="image/ico" href="favicon.ico" />
@@ -24,13 +24,13 @@ include('page_session.php');
       <!-- Brand and toggle get grouped for better mobile display --> 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="navbar-header">
-       <h1 class="navbar-brand"><a href="index.php">college<span>Finder</span></a></h1>
+       <h1 class="navbar-brand"><a href="index.php">EDU<span>LOCATE</span></a></h1>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
       </div>
       <div class="navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li class="active"><a href="index.php">Home</a></li>
-          <li><a href="india.php">Study Nepal</a></li>
+          <li><a href="nepal.php">browse</a></li>
 <?php
 
 if(isset($f_name))
@@ -67,19 +67,19 @@ else
   <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner">
       
-       <div class="item active"> <img data-src="images/slider/home1.jpg" alt="Third slide" src="images/slider/home1.jpg">
+       <div class="item active"> <img data-src="images/sliders/home1.jpg" alt="Third slide" src="images/sliders/home1.jpg">
         <div class="container">
           <div class="carousel-caption">
             <h1>Find a college that's Right for You in Nepal</h1>
             <p>Confused about which College to choose? Know which College you can apply for!</p>
-            <p><a class="btn btn-default btn-lg" href="india.php" role="button">get started</a></p>
+            <p><a class="btn btn-default btn-lg" href="nepal.php" role="button">get started</a></p>
           </div>
         </div>
       </div>
        
       
       
-      <div class="item"> <img data-src="images/slider/career-header.jpg" alt="Second slide" src="images/slider/career-header.jpg">
+      <div class="item"> <img data-src="images/sliders/home1.jpg" alt="Second slide" src="images/sliders/home1.jpg">
         <div class="container">
           <div class="carousel-caption">
             <h1>Explore New Career and Opportunities  </h1>
@@ -111,7 +111,7 @@ else
       <h2><span>Services</span></h2>
       <p class="small-paragraph">We basically deal with following services.</p>
       <div class="col-md-4">
-        <h3><a href="india.php">Finding College/Universities</a></h3>
+        <h3><a href="nepal.php">Finding College/Universities</a></h3>
         <p class="smaller" style="margin-top: 10px;">We Provide High Collection Of Universities for Higher Studies</p>
         <img src="images/content__images/search.jpg" alt="image" class="img-responsive img-rounded">
         <p>Simplified and User-Friendly College Search Process.</p>
@@ -140,7 +140,7 @@ else
         <p class="small-paragraph light">We Provide High Collection Of Universities for Higher Studies</p>
         <img src="images/content__images/college.jpg" alt="pic" class="img-rounded">
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
-        <p><a href="india.php" class="btn btn-default btn-md">Learn more</a></p>
+        <p><a href="nepal.php" class="btn btn-default btn-md">Learn more</a></p>
       </div>
       <div class="col-md-6">
         <h3>Career Guidance</h3>
@@ -175,20 +175,14 @@ else
 <footer>
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-4">
         <h3>About</h3>
         <p>We strive to deliver a level of service that exceeds the expectations of our customers. <br />
           <br />
           If you have any questions about our products or services, please do not hesitate to contact us. We have friendly, knowledgeable representatives available seven days a week to assist you.</p>
       </div>
-      <div class="col-md-3">
-        <h3>Tweets</h3>
-        <p><span>Tweet</span> <a href="#">@nishanks</a><br />
-          Great Website truly helpful for finding the right career path and college. </p>
-        <p><span>Tweet</span> <a href="#">@anonymous</a><br />
-          Awesome job!Truly Helpful!</p>
-      </div>
-      <div class="col-md-3">
+
+      <div class="col-md-4">
         <h3>Mailing list</h3>
         <p>Subscribe to our mailing list for offers, news updates and more!</p>
         <br />
@@ -200,7 +194,7 @@ else
           <button type="submit" class="btn btn-primary">subscribe</button>
         </form>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-4">
         <h3>Social</h3>
         <p><br />
           Baluwatar, Kathmandu<br />
@@ -214,7 +208,7 @@ else
       </div>
     </div>
     <hr>
-    <p class="text-center">&copy; Copyright collegeFinder.com. All Rights Reserved.</p>
+    <p class="text-center">&copy; Copyright edulocate.com. All Rights Reserved.</p>
   </div>
 </footer>
 

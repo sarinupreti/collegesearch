@@ -28,13 +28,13 @@ $user_name=$login_session;
      function function1(id) {
       var id = id;
       //document.writeln(id);
-      window.location.href = "http://localhost/College%20Finder/college_view.php?id=" + id;
+      window.location.href = "http://localhost/edulocate/college_view.php?id=1" + id;
     }
       function function2(id) {
       var id = id;
        
       //document.writeln(id);
-      window.location.href = "http://localhost/College%20Finder/delete_wish.php?id=" + id;
+      window.location.href = "http://localhost/edulocate/delete_wish.php?id=" + id;
     } 
   </script>
 </head>
@@ -45,7 +45,7 @@ $user_name=$login_session;
       <!-- Brand and toggle get grouped for better mobile display --> 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="navbar-header">
-        <h1 class="navbar-brand"><a href="index.html">college<span>Finder</span></a></h1>
+        <h1 class="navbar-brand"><a href="index.html">EDU<span>LOCATE</span></a></h1>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
       </div>
       <div class="navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
@@ -60,7 +60,7 @@ $user_name=$login_session;
               <li><a href="logout.php">Logout</a></li>
             </ul>
           </li>
-          <li><a href="india.php">study india</a></li>
+          <li><a href="nepal.php">browse</a></li>
 
 
         </ul>
@@ -229,20 +229,14 @@ while($row = $result2->fetch_assoc())
 <footer>
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-4">
         <h3>About</h3>
         <p>We strive to deliver a level of service that exceeds the expectations of our customers. <br />
           <br />
           If you have any questions about our products or services, please do not hesitate to contact us. We have friendly, knowledgeable representatives available seven days a week to assist you.</p>
       </div>
-      <div class="col-md-3">
-        <h3>Tweets</h3>
-        <p><span>Tweet</span> <a href="#">@nishanks</a><br />
-          Great Website truly helpful for finding the right career path and college. </p>
-        <p><span>Tweet</span> <a href="#">@anonymous</a><br />
-          Awesome job!Truly Helpful!</p>
-      </div>
-      <div class="col-md-3">
+
+      <div class="col-md-4">
         <h3>Mailing list</h3>
         <p>Subscribe to our mailing list for offers, news updates and more!</p>
         <br />
@@ -254,7 +248,7 @@ while($row = $result2->fetch_assoc())
           <button type="submit" class="btn btn-primary">subscribe</button>
         </form>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-4">
         <h3>Social</h3>
         <p><br />
           Baluwatar, Kathmandu<br />
@@ -268,7 +262,7 @@ while($row = $result2->fetch_assoc())
       </div>
     </div>
     <hr>
-    <p class="text-center">&copy; Copyright collegeFinder.com. All Rights Reserved.</p>
+    <p class="text-center">&copy; Copyright edulocate.com. All Rights Reserved.</p>
   </div>
 </footer>
 

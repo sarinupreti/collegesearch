@@ -54,6 +54,6 @@ if ($conn->connect_error) {
 $sql3 = "INSERT INTO wishlist VALUES('','$coll_id','$cname','$uid','$uname',CURRENT_DATE,CURRENT_TIME)";
 $result3 = $conn->query($sql3);
 
-header("Location: india.php");
+header("Location: nepal.php");
 
 ?>

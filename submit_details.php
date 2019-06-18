@@ -25,8 +25,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
       // To protect MySQL injection for Security purpose
       $uname= stripslashes($uname);
       $pass= stripslashes($pass);
-      $uname= mysql_real_escape_string($uname);
-      $pass= mysql_real_escape_string($pass);
+      $uname= mysqli_real_escape_string($uname);
+      $pass= mysqli_real_escape_string($pass);
       
       $conn=new mysqli($servername,$username,$password,$database);
       
