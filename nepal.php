@@ -409,7 +409,7 @@ if(isset($_SESSION["filter-options"]) && ($_SESSION["filter-options"]=="filter")
       </div>
       <div class="col-md-4">
         <h3>Tweets</h3>
-        <p><span>Tweet</span> <a href="#">@nishanks</a><br />
+        <p><span>Tweet</span> <a href="#">#edulocate</a><br />
           Great Website truly helpful for finding the right career path and college. </p>
         <p><span>Tweet</span> <a href="#">@anonymous</a><br />
           Awesome job!Truly Helpful!</p>
