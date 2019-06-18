@@ -5,3 +5,8 @@ A website based on PHP and bootstrap to view colleges and get recommended colleg
 # edulocate Website Link
 
 localhost/index.php
+
+#login creds
+
+username: admin
+paassowrd: admin1
